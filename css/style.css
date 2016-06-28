@@ -1,0 +1,359 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+
+A:visited {text-decoration:none;color:#FFF;} 
+a:link   
+{   
+ text-decoration:none;  
+ color: red; 
+}  
+
+body {
+	background: #cacaca;
+	margin: 0;
+	padding: 20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+}
+
+.logo{
+	display: block;
+	top: 0px;
+    position: absolute;
+    left: 5%;
+	/*width:170px;*/
+	width:300px;
+	font-size:20px;   	 
+		
+	/*background: #000;*/
+ 	background: #009FE3;
+	height: 55px;
+ 	padding-left: 20px;
+ 	/*color: #eeb200;*/	
+	color: #FFF;	
+ 	line-height: 55px;
+ 	/*text-shadow: 1px 1px 1px rgba(0,0,0,.3);*/
+	text-shadow: 1px 1px 1px rgba(0,0,0,1);
+ 	box-sizing: border-box;	
+	
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border: 0px solid #000000;
+ }
+   	
+#page-wrap {
+	margin: 50px;
+}
+
+
+.caption {
+ 	display: block;
+ 	width: 100%;
+ 	background: #000;
+ 	height: 55px;
+ 	padding-left: 10px;
+ 	color: #eeb200;
+ 	font-size: 20px;
+ 	line-height: 55px;
+ 	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+ 	box-sizing: border-box;
+}
+	 
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	th { 
+		background: #002359; 
+		color: white; 
+		/*font-weight: bold;*/		 
+	}
+	td, th { 
+		padding: 12px 12px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+		
+	}
+	
+		/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		
+		td:nth-of-type(1):before { content: "Piso"; }
+		td:nth-of-type(2):before { content: "Numero"; }
+		td:nth-of-type(3):before { content: "Estado"; }
+		td:nth-of-type(4):before { content: "Fecha"; }
+		td:nth-of-type(4):before { content: "Accion"; }
+		*/
+		.caption{ 
+			font-size: 16px; 
+			height: 80px;
+		}
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		
+	
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	@media only screen and (max-width: 479px) {
+		.caption{ 
+			font-size: 12px; 
+			height: 60px;
+			padding-left: 3px;
+			line-height: 30px;
+		}	
+		body {
+			padding: 0px;
+			 	font-size: 12px; 
+		}	
+	}
+/*BOTON*/
+.button,  .bt_plus_plus{        
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #ccc;
+    background-image: linear-gradient(top, #eee, #ccc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    border: 1px solid #777;
+    padding: 0 1.5em;
+    margin: 0.5em;
+    font: bold 1em/2em Arial, Helvetica;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.button:hover {
+    background-color: #ddd;        
+    background-image: linear-gradient(top, #fafafa, #ddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');        
+}
+
+.button:active {
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+    position: relative;
+    top: 1px;
+}
+
+.button:focus {
+    outline: 0;
+    background: #fafafa;
+}    
+
+.button:before {
+    background: #ccc;
+    background: rgba(0,0,0,.1);
+    float: left;        
+    width: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 1em 0 -1em;
+    padding: 0 .2em;
+    box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+    border-radius: .15em 0 0 .15em;
+    pointer-events: none;        
+}
+
+
+
+
+.mini-button, .bt_del, .bt_plus{        
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #ccc;
+    background-image: linear-gradient(top, #eee, #ccc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    border: 1px solid #777;
+    padding: 0 1em;
+    /*margin: 0.5em;*/
+    font: bold 1em/2em Arial, Helvetica;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.button-fecha{        
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #ccc;
+    background-image: linear-gradient(top, #eee, #ccc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    border: 1px solid #777;
+    /*padding: 0 1em;*/
+    /*margin: 0.5em;*/
+    font:  1em/2em Arial, Helvetica;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+/* Hexadecimal entities for the icons */
+
+.add:before {
+    content: "\271A";
+}
+
+.edit:before {
+    content: "\270E";        
+}
+
+.delete:before {
+    content: "\2718";        
+}
+
+.save:before {
+    content: "\2714";        
+}
+
+.email:before {
+    content: "\2709";        
+}
+
+.like:before {
+    content: "\2764";        
+}
+
+.next:before {
+    content: "\279C";
+}
+
+.star:before {
+    content: "\2605";
+}
+
+.spark:before {
+    content: "\2737";
+}
+
+.play:before {
+    content: "\25B6";
+}
+
+/* -------------- AGREGADO JONY -------------*/
+/****************************************************
+ * 	Sombra simple
+ *****************************************************/
+.sombra {
+ box-shadow: 19px 19px 22px #999;
+ -webkit-box-shadow: 19px 19px 22px #999;
+ -moz-box-shadow: 18px 18px 23px #999;
+ filter: progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=4);
+ }
+
+
+
+
+.subtitulo {
+  line-height: 43px;
+  margin: 10px auto 10px;
+  font-size: 19px;
+  font-weight: 500;
+  color: white;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background: #d7604b;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #dc745e, #d45742);
+  background-image: -moz-linear-gradient(top, #dc745e, #d45742);
+  background-image: -o-linear-gradient(top, #dc745e, #d45742);
+  background-image: linear-gradient(to bottom, #dc745e, #d45742);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+  line-height: 43px;
+  margin: 10px auto 10px;
+  font-size: 19px;
+  font-weight: 500;
+  /*color: black;*/
+  color:#FFF;
+  /*color: rgba(0, 0, 0, 1);*/
+  text-align: center;
+  text-shadow: 0 0px rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
+  border-radius: 3px;/*#FAFAD2*/
+  /*background-image: -webkit-linear-gradient(top, #f2f28d, #F0E68C);
+  background-image: -moz-linear-gradient(top, #f2f28d, #F0E68C);
+  background-image: -o-linear-gradient(top, #f2f28d, #F0E68C);
+  background-image: linear-gradient(to bottom, #f2f28d, #F0E68C);
+  */
+  background-image: -webkit-linear-gradient(top, #193972, #193972);
+  background-image: -moz-linear-gradient(top, #193972, #193972);
+  background-image: -o-linear-gradient(top, #193972, #193972);
+  background-image: linear-gradient(to bottom, #193972, #193972);
+ /* -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);*/
+}

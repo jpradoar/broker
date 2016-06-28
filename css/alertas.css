@@ -1,0 +1,70 @@
+
+
+.notify {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  background: #E4EAEE;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.notify.notify--pinned {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+}
+.notify.notify--danger {
+  background: #F57E7D;
+}
+.notify.notify--warning {
+  background: #FFAC69;
+}
+.notify.notify--success {
+  background: #82CF85;
+}
+.notify.notify--info {
+  background: #7db8f5;
+}
+.notify.notify--dismissible {
+  padding-right: 2.5rem;
+}
+.notify .notify-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.2);
+}
+.notify .notify-close:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+.notify .notify-undo {
+  position: absolute;
+  right: .5rem;
+  top: .7rem;
+  display: block;
+  text-align: center;
+  padding: .4rem 1rem;
+  border: none;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .9rem;
+}
+.notify .notify-undo:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.55);
+}
