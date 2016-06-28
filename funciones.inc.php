@@ -27,8 +27,8 @@ function conecto() //
 {
    //error_reporting(0);
    	$SERVER		="127.0.0.1";
-	$USER 		= "root";
-	$PASS 		= "m1s3r3r3";
+	$USER 		= "mysql_user";
+	$PASS 		= "mysql_pass";
 	$DATABASE	= "bhi_db";
 
 	if ($db = mysqli_connect($SERVER, $USER, $PASS, $DATABASE))
