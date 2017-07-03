@@ -81,7 +81,7 @@ else{
 <html>
  <head>
 	<meta charset='iso-8859-1'>
-	<title>BHI - Sistema Administrativo</title>
+	<title>_%%_empresanombre_%%_</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
     
@@ -100,12 +100,12 @@ else{
     <!-- AUTOCOMPLETAR -->   
  </head>
 <body>
-	<div class="logo">BHI - BROKERS</div>
+	<div class="logo">_%%_empresanombre_%%_</div>
 	<div id="page-wrap"> 
     
     <?php include 'menu.php'; ?>
     <form id="form1" name="form1" method="post">
-    <div class="caption">BHI - BROKERS.</div> 
+    <div class="caption">_%%_empresanombre_%%_.</div> 
 	<p>USUARIO: <?php echo $Xnombre; ?></p>
     <table class="sombra">
 		<thead>

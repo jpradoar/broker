@@ -35,13 +35,13 @@ if (falta_logueo())
 <html>
  <head>
 	<meta charset='iso-8859-1'>
-	<title>BHI - Sistema Administrativo</title>
+	<title>_%%_empresanombre_%%_</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta http-equiv="refresh" content="5;url=http://localhost/Limpieza/index.php">-->
 	<link rel="stylesheet" href="css/style.css">
  </head>
 <body>
-	<div class="logo">BHI - BROKERS</div>
+	<div class="logo">_%%_empresanombre_%%_</div>
 	<div id="page-wrap">   
 	<form action="" method="post" name="form1" >
     <table class="sombra" border="0">

@@ -235,7 +235,7 @@ if($_POST){
 <html>
  <head>
 	<meta charset='iso-8859-1'>
-	<title>BHI - Sistema Administrativo</title>
+	<title>_%%_empresanombre_%%_</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/style.css">
     
@@ -244,7 +244,7 @@ if($_POST){
     
  </head>
 <body>
-	<div class="logo">BHI - BROKERS</div> 
+	<div class="logo">_%%_empresanombre_%%_</div> 
 	<div id="page-wrap"> 
  <form action="" method="post" name="form1" enctype="multipart/form-data" >   
     <?php include 'menu.php'; ?>

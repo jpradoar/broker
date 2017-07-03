@@ -80,7 +80,7 @@ if($Xbuscar=="E"){
 <html>
  <head>
 	<meta charset='iso-8859-1'>
-	<title>BHI - Sistema Administrativo</title>
+	<title>_%%_empresanombre_%%_</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
     
@@ -89,7 +89,7 @@ if($Xbuscar=="E"){
     
  </head>
 <body>
-	<div class="logo">BHI - BROKERS</div>
+	<div class="logo">_%%_empresanombre_%%_</div>
 	<div id="page-wrap"> 
     
     <?php include 'menu.php'; ?>

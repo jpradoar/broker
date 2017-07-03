@@ -280,7 +280,7 @@ if($_POST){//SEGUNDOS POST
 <html>
  <head>
 	<meta charset='iso-8859-1'>
-	<title>BHI - Sistema Administrativo</title>
+	<title>_%%_empresanombre_%%_</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/style.css">
     
@@ -305,7 +305,7 @@ if($_POST){//SEGUNDOS POST
  <form action="" method="post" name="form1" enctype="multipart/form-data">   
     <?php include 'menu.php'; ?>
 
-    <div class="caption">BHI - BROKERS.</div> 
+    <div class="caption">_%%_empresanombre_%%_.</div> 
 	<p>USUARIO: <?php echo $Xnombre; ?></p>
 	<table class="sombra">
       <thead>

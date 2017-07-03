@@ -41,7 +41,7 @@ require_once('funciones.inc.php');
 	<link rel="stylesheet" href="css/style.css">
  </head>
 <body>
-	<div class="logo">BHI - BROKERS</div>
+	<div class="logo">_%%_empresanombre_%%_</div>
 	<div id="page-wrap">    
 	<form action="" method="post" name="form1" >
     <table class="sombra">

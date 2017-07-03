@@ -59,14 +59,14 @@ if($_POST)
 <html>
  <head>
 	<meta charset='iso-8859-1'>
-	<title>BHI - Sistema Administrativo</title>
+	<title>_%%_empresanombre_%%_</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta http-equiv="refresh" content="5;url=http://localhost/Limpieza/index.php">-->
 	<link rel="stylesheet" href="css/style.css">
  </head>
 <body>
 	<div id="page-wrap"> 
-    <div class="caption">BHI - BROKERS.</div> 
+    <div class="caption">_%%_empresanombre_%%_.</div> 
 	<form action="" method="post" name="form1" >
     <table class="sombra" border="0">
 		<thead>
